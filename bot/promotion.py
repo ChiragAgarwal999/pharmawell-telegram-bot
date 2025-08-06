@@ -27,7 +27,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await query.answer()
 
     if query.data == 'offers':
-        await query.edit_message_text("🔥 Current Offers:\n\n1. Upto 50% off on all medicines\n2. Free delivery above ₹1500\n\nVisit: https://www.pharmawell.in")
+        await query.edit_message_text("🔥 Current Offers:\n\n1. Upto 50% off on all medicines\n2. Free delivery above ₹1500\n\nVisit: https://www.pharmawell.com")
     elif query.data == 'contact':
         await query.edit_message_text("📞 Contact Us:\n\n📧 pharmawell4u@gmail.in\n📱 +91-8209540517")
 
@@ -44,3 +44,5 @@ if __name__ == '__main__':
         port=PORT,
         webhook_url=f"https://pharmawell-telegram-bot.onrender.com"  # Replace this
     )
+
+
